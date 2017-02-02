@@ -44,13 +44,13 @@ message is received/sent for consumers/producers divided by number of events.
 
 The different parts of the delay are:
 
-Consumer sends ask to Producer
-Delay while ask in Producers message queue
-Producer receives ask
-Delay while Producer creates events
-Producer sends events to Consumer
-Delay while events in Consumers message queue
-Consumer receives events
+* Consumer sends ask to Producer
+* Delay while ask in Producers message queue
+* Producer receives ask
+* Delay while Producer creates events
+* Producer sends events to Consumer
+* Delay while events in Consumers message queue
+* Consumer receives events
 
 Therefore a consumer delay contains the producer delay plus the message queue
 delays for both processes. A future version should be able to differentiate
